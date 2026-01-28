@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container"></div>
@@ -21,5 +22,6 @@
         <input type="text" name="cpf">
         <input type="submit" value="Enviar">
     </form>
+    </div>
 </body>
 </html>

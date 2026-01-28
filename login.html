@@ -4,12 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+html, body{
+     background: rgb(7, 7, 7);
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+    .login{
+        background: rgb(80, 250, 80);
+        width: 300px;
+        margin: 120px auto;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px greenyellow;
+        text-align: center;
+    }
+    .login h2{
+        margin-bottom: 20px;
+    }
+    .login input{
+        width: 100px;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 6px;
+        border: 1px solid black;
+    }
+    .login button{
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background: black;
+        color: chartreuse;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .login button hover{
+        background: greenyellow;
+    }
+    </style>
 </head>
 <body>
+    <div class="login">
+    <h2>LOGIN</h2>
     <form action="login.php" method="post">
+        <Label>CPF</Label>
         <input name="cpf">
+        <br><br>
+        <Label>Senha</Label>
         <input type="password" name="senha">
         <button>Entrar</button>
     </form>
+    </div>
 </body>
 </html>
