@@ -59,6 +59,15 @@ a:hover{
     50%{transform: translateY(-10px);}
     100%{ transform: translateY(0);}
 }
+@media(max-widht: 768px) {
+        .menu{
+            flex-direction: column;
+            gap: 15px;
+        }
+       img{
+        width: 120px;
+       }
+    }
     </style>
 </head>
 <body>
@@ -67,9 +76,8 @@ a:hover{
         <img src="OIP.webp" alt="">
         </div>
         <ul>
-            <li><a href="cadastro.php">CADASTRO</a></li>
-            <li><a href="$">ALUNOS</a></li>
-            <li><a href="$">PAGAMENTOS</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="planos.html">PLANOS</a></li>
             <li><a href="$">AGENDAMENTOS</a></li>
             <li><a href="$">SAIR</a></li>
         </ul>

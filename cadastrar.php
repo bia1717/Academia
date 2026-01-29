@@ -11,7 +11,8 @@ $sql = "INSERT into cadastro(nome, email, senha, telefone, cpf)
 values ('$nome', '$email', '$senha','$telefone', '$cpf')";
 
 if (mysqli_query($conexao, $sql)){
-echo "Cadastro realizado com sucesso";
+    header("Location: login.html");
+    exit ;
 echo "<br><a href=\"cadastro.php\">Voltar</a>";
 } else {
     echo "Erro:" . mysqli_error($conexao);

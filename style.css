@@ -67,3 +67,14 @@ menu a{
         margin: 0 auto 20px auto;
         max-width: 180px;
     }
+    @media(max-widht: 768px) {
+        .menu{
+            flex-direction: column;
+        }
+        .container{
+            width: 90%;
+        }
+        .container h1{
+            font-size: 22px;
+        }
+    }

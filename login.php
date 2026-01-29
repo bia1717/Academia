@@ -9,7 +9,8 @@ if ($result->num_rows == 1) {
     $usuario = $result->fetch_assoc();
 
     if (password_verify($senha, $usuario['senha'])) {
-        echo "Login realizado!";
+        header("Location: menu.html");
+        exit;
     } else {
         echo "Senha Incorreta";
     }
