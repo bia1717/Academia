@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background: linear-gradient(135deg,#000000,#0f5);
+            color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h1{
+            margin: 30px;
+            color: rgb(255, 255, 255);
+        }
+        .container{
+            background: #111;
+            padding: 30px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 350px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, select{
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+        }
+        button{
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #0f5;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover{
+            opacity: 0.8;
+        }
+        @media(max-width:600px){
+            .container{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Agendamento</h1>
+    <div class="container">
+        <form action="agendar.php" method="post">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <select name="servico">
+                <option value="">Escolha o serviço</option>
+                <option value="Nutrição">Nutrição</option>
+                <option value="Fisioterapia">Fisioterapia</option>
+                <option value="Avaliação Física">Avaliação Física</option>
+            </select>
+            <input type="date" name="data" required>
+
+            <input type="time" name="hora" required>
+            <button type="submit">Agendar</button>
+        </form>
+    </div>
+</body>
+</html>
